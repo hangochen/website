@@ -94,7 +94,7 @@ a:hover { text-decoration: underline; }
 .hero-text h1 { margin: 0 0 0.3rem; font-size: 2.4rem; }
 .title { margin: 0; font-weight: 500; }
 .affiliation { margin: 0.1rem 0 0.8rem; color: var(--muted); }
-.tagline { margin: 0 0 1.2rem; font-style: italic; color: var(--muted); font-family: "Newsreader", serif; font-size: 1.15rem; }
+.tagline { margin: 0 0 1.2rem; font-style: italic; color: var(--muted); font-size: 1.05rem; }
 
 .links { display: flex; gap: 0.6rem; flex-wrap: wrap; }
 .links a {
