@@ -224,7 +224,11 @@
         if (!sections.some(function (section) { return section.id === id; })) {
           id = 'about';
         }
-        sections.forEach(function (section) { section.hidden = section.id !== id; });
+        sections.forEach(function (section) {
+          var active = section.id === id;
+          section.classList.toggle('active', active);
+          section.hidden = !active;
+        });
         tabs.forEach(function (tab) {
           var active = tab.getAttribute('href') === '#' + id;
           tab.classList.toggle('active', active);
