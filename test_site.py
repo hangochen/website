@@ -52,7 +52,7 @@ class SiteChecks(unittest.TestCase):
             for key in ('src', 'href'):
                 ref = attrs.get(key, '')
                 if ref and not ref.startswith(('https:', 'http:', '#', 'mailto:', 'data:')):
-                    self.assertTrue((ROOT / ref).is_file(), ref)
+                    self.assertTrue((ROOT / ref.split('?', 1)[0]).is_file(), ref)
             if tag == 'a' and attrs.get('target') == '_blank':
                 self.assertIn('noopener', attrs.get('rel', '').split())
         for expected in (
