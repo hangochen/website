@@ -38,7 +38,7 @@ class SiteChecks(unittest.TestCase):
         for tag, attrs in self.page.elements:
             if tag == 'a' and attrs.get('href', '').startswith('#'):
                 self.assertIn(attrs['href'][1:], ids)
-        self.assertTrue({'about', 'research', 'teaching', 'conferences', 'awards', 'contact'} <= set(ids))
+        self.assertTrue({'about', 'research', 'teaching', 'conferences', 'contact'} <= set(ids))
 
     def test_content_available_without_javascript(self):
         sections = [a for t, a in self.page.elements if t == 'section']

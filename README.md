@@ -11,7 +11,7 @@ Keep redesign work on its review branch. Changes reach the live website only aft
 ## Design and behavior
 
 - DU Crimson `#BA0C2F` and DU Gold `#A89968`, with white, black, and DU Dark Grey `#54565B`.
-- A continuous, responsive page with native section anchors. Existing `#about`, `#research`, `#teaching`, `#conferences`, and `#awards` URLs remain valid.
+- A continuous, responsive page with native section anchors. Existing `#about`, `#research`, `#teaching`, and `#conferences` URLs remain valid.
 - All sections remain readable without JavaScript. The email links fall back to a readable address when JavaScript is disabled.
 - Optional dark mode uses lighter text accents for contrast and remembers the visitor's choice when storage is available.
 - Existing Google Analytics configuration and social metadata are retained.
@@ -27,4 +27,4 @@ The automated checks cover internal anchor targets, unique IDs, asset references
 
 ## Content updates
 
-Edit biography, research, teaching, conferences, awards, and profile links in `index.html`. Keep the existing academic text unless Hangu approves a content change. Edit the email address assembly in `site.js` and its readable fallback in `index.html` together.
+Edit biography, research, teaching, conferences, and profile links in `index.html`. Keep the existing academic text unless Hangu approves a content change. Edit the email address assembly in `site.js` and its readable fallback in `index.html` together.
