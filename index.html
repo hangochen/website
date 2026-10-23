@@ -22,48 +22,49 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-  <header class="hero">
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#conferences">Conferences</a>
-      <a href="#awards">Awards</a>
-    </nav>
-    <div class="hero-inner">
-      <!-- Save your photo as headshot.jpg in this folder -->
-      <img class="headshot" src="headshot.jpg" alt="Hangu Chen" />
-      <div class="hero-text">
-        <h1>Hangu Chen</h1>
-        <p class="title">Visiting Assistant Professor of Accounting</p>
-        <p class="affiliation">Daniels College of Business, University of Denver</p>
-        <p class="tagline">Accounting researcher studying information and decisions inside and outside the firm</p>
-        <div class="links">
-          <a id="email-link" href="#email-fallback">Email</a>
-          <a href="https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=4823658" target="_blank" rel="noopener">SSRN</a>
-          <a href="https://www.linkedin.com/in/hangu-chen-649a55129/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-        <noscript><p id="email-fallback">Email: hangu.chen [at] du [dot] edu. Replace [at] with @ and [dot] with a period to send an email.</p></noscript>
-      </div>
+  <meta name="color-scheme" content="light dark" />
+  <script src="site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Hangu Chen, home"><span class="monogram" aria-hidden="true">HC<span>.</span></span><span class="brand-name">Hangu Chen<small>University of Denver</small></span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#conferences">Conferences</a><a href="#awards">Awards</a><a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" hidden><span aria-hidden="true">◐</span><span class="theme-label">Dark</span></button>
     </div>
   </header>
-
-  <main>
-    <section id="about">
-      <h2>About</h2>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Accounting · University of Denver</p>
+        <h1 id="hero-title">Hangu <em>Chen</em></h1>
+        <p class="hero-tagline">Accounting researcher studying information and decisions inside and outside the firm</p>
+        <div class="hero-affiliation"><p>Visiting Assistant Professor of Accounting</p><p>Daniels College of Business, University of Denver</p></div>
+        <div class="hero-actions"><a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#teaching">Teaching <span aria-hidden="true">→</span></a></div>
+        <div class="social-links" aria-label="Professional links"><a data-email href="#email-fallback">Email <span aria-hidden="true">↗</span></a><a href="https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=4823658" target="_blank" rel="noopener">SSRN <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/hangu-chen-649a55129/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="portrait-wrap"><img class="headshot" src="headshot.jpg" alt="Hangu Chen" width="600" height="600" fetchpriority="high" /></div>
+        <div class="profile-info"><p class="profile-caption">Research & perspective</p><dl><div><dt>Focus</dt><dd>Information and decisions inside and outside the firm</dd></div><div><dt>Methods</dt><dd>Archival empirical methods, machine learning & textual analysis</dd></div><div><dt>Beyond work</dt><dd>Rock climbing</dd></div></dl></div>
+      </aside>
+      <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> Get to know me</a>
+    </section>
+    <div class="content-wrap">
+<section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-label"><span>01</span> / A little background</div>
+      <div class="section-content"><h2 id="about-title">About</h2>
       <p>I am a <span class="hl">Visiting Assistant Professor of Accounting</span> at the Daniels College of Business, <span class="hl">University of Denver</span>. I earned my Ph.D. in Management Science (Accounting) from the Naveen Jindal School of Management at <span class="hl">The University of Texas at Dallas</span> in 2026. Before that, I completed an M.S. in Accounting at <span class="hl">Boston College</span> and a B.B.A. in Professional Accountancy (Global Accounting Stream) at <span class="hl">The Chinese University of Hong Kong</span>.</p>
       <p>My research examines how information is produced, processed, and used inside and outside firms. I study how <span class="hl">organizational design</span> shapes firms&rsquo; <span class="hl">internal information environments</span> and operating decisions, how firms produce and <span class="hl">disclose information</span>, and how investors and policymakers process that information when making <span class="hl">capital allocation</span> and <span class="hl">monetary policy</span> decisions. My work primarily uses archival empirical methods, including <span class="hl">machine learning</span>, <span class="hl">textual analysis</span>, and <span class="hl">generative AI</span>.</p>
       <p>Outside of research, I enjoy rock climbing.</p>
+    </div>
     </section>
-
-    <section id="research">
-      <h2>Research</h2>
-
-      <article class="paper">
+<section id="research" class="section" aria-labelledby="research-title">
+      <div class="section-label"><span>02</span> / Ideas & inquiry</div>
+      <div class="section-content"><h2 id="research-title">Research</h2><article class="paper"><div class="entry-index" aria-hidden="true">Paper / 01</div><div class="entry-body">
         <h3>Firm Decentralization and Resource Adjustment</h3>
         <p class="meta">Dissertation</p>
         <p class="meta">Committee: Suresh Radhakrishnan (co-chair), Gil Sadka (co-chair), Miao Liu, Ram Natarajan, and Federico Siano</p>
@@ -73,9 +74,8 @@
           <span class="tag">resource adjustment decisions</span>
           <span class="tag">cost behavior</span>
         </div>
-      </article>
-
-      <article class="paper">
+      </div></article>
+<article class="paper"><div class="entry-index" aria-hidden="true">Paper / 02</div><div class="entry-body">
         <h3>Federal Reserve Attention to Firms&rsquo; Macroeconomic Disclosures: Implications for Monetary Policy</h3>
         <p class="meta">with Suresh Nallareddy, Gil Sadka, and Federico Siano</p>
         <div class="tags">
@@ -84,9 +84,8 @@
           <span class="tag">textual analysis</span>
         </div>
         <p>Working paper</p>
-      </article>
-
-      <article class="paper">
+      </div></article>
+<article class="paper"><div class="entry-index" aria-hidden="true">Paper / 03</div><div class="entry-body">
         <h3>Attention as the Catalyst of Market Efficiency: Evidence from Anomalies</h3>
         <p class="meta">with Yang Cao, Ed deHaan, and Miao Liu</p>
         <div class="tags">
@@ -94,9 +93,8 @@
           <span class="tag">machine learning</span>
           <span class="tag">portfolio allocation decisions</span>
         </div>
-      </article>
-
-      <article class="paper">
+      </div></article>
+<article class="paper"><div class="entry-index" aria-hidden="true">Paper / 04</div><div class="entry-body">
         <h3>External Information Environment and Firm Boundaries: Evidence from the Banking Industry</h3>
         <p class="meta">with Miao Liu</p>
         <div class="tags">
@@ -107,20 +105,19 @@
         </div>
         <p>Presented at the 2023 AAA Annual Meeting (Panel on ESG in Banking) and the 2024 FARS Midyear Meeting</p>
         <p><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4544083" target="_blank" rel="noopener">Read on SSRN &rarr;</a></p>
-      </article>
+      </div></article></div>
     </section>
-
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <article class="paper">
+<section id="teaching" class="section" aria-labelledby="teaching-title">
+      <div class="section-label"><span>03</span> / In the classroom</div>
+      <div class="section-content"><h2 id="teaching-title">Teaching</h2><article class="paper"><div class="entry-index" aria-hidden="true">Experience / 01</div><div class="entry-body">
         <h3>Instructor &mdash; University of Denver</h3>
         <p class="meta">Fall 2026</p>
         <p class="course-label">Undergraduate</p>
         <ul class="courses courses-single">
           <li>ACTG 2200: Introduction to Financial Reporting</li>
         </ul>
-      </article>
-      <article class="paper">
+      </div></article>
+<article class="paper"><div class="entry-index" aria-hidden="true">Experience / 02</div><div class="entry-body">
         <h3>Instructor &mdash; University of Texas at Dallas</h3>
         <p class="meta">2024&ndash;2025</p>
         <p class="course-label">Undergraduate</p>
@@ -128,8 +125,8 @@
           <li>Introductory Financial Accounting &mdash; Fall 2024, Spring 2025</li>
         </ul>
         <p class="course-note">Teaching evaluation: 4.7/5 &middot; class size ~40 students</p>
-      </article>
-      <article class="paper">
+      </div></article>
+<article class="paper"><div class="entry-index" aria-hidden="true">Experience / 03</div><div class="entry-body">
         <h3>Teaching Assistant &mdash; University of Texas at Dallas</h3>
         <p class="meta">2021&ndash;2026</p>
         <p class="course-label">Undergraduate</p>
@@ -148,11 +145,11 @@
           <li>Advanced Auditing</li>
           <li>Accounting for Managerial Decision Making</li>
         </ul>
-      </article>
+      </div></article></div>
     </section>
-
-    <section id="conferences">
-      <h2>Conferences</h2>
+<section id="conferences" class="section" aria-labelledby="conferences-title">
+      <div class="section-label"><span>04</span> / Academic community</div>
+      <div class="section-content"><h2 id="conferences-title">Conferences</h2>
       <p class="legend"><span class="star">*</span> Presenter</p>
 
       <div class="conf-year">
@@ -197,85 +194,23 @@
           <li>AES Summer School in Accounting Theory and Empirical Research</li>
         </ul>
       </div>
+    </div>
     </section>
-
-    <section id="awards">
-      <h2>Honors &amp; Awards</h2>
+<section id="awards" class="section" aria-labelledby="awards-title">
+      <div class="section-label"><span>05</span> / Recognition</div>
+      <div class="section-content"><h2 id="awards-title">Honors &amp; Awards</h2>
       <ul>
         <li>JSOM Outstanding Graduate Student Award, Accounting Area Nominee &mdash; UT Dallas, 2025</li>
         <li>Three-Minute Dissertation Competition, First Runner-up &mdash; UT Dallas, 2025</li>
       </ul>
+    </div>
     </section>
+    </div>
   </main>
-
-  <footer>
-    <p>&copy; <span id="year"></span> Hangu Chen. Last updated July 2026.</p>
+  <footer id="contact" class="site-footer" aria-labelledby="contact-title">
+    <div class="footer-main"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Hangu Chen<span>.</span></h2><p>Visiting Assistant Professor of Accounting<br>Daniels College of Business<br>University of Denver</p></div><div class="footer-links"><p class="profile-caption">Contact & elsewhere</p><a data-email href="#email-fallback">Email <span aria-hidden="true">↗</span></a><a href="https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=4823658" target="_blank" rel="noopener">SSRN <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/hangu-chen-649a55129/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+    <noscript><p id="email-fallback">Email: hangu.chen [at] du [dot] edu. Replace [at] with @ and [dot] with a period to send an email.</p></noscript>
+    <div class="footer-bottom"><p>&copy; <span id="year">2026</span> Hangu Chen. Last updated July 2026.</p><a href="#top">Back to top ↑</a></div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Keep the selected section in sync with shareable URLs and browser history.
-    (function () {
-      var tabs = document.querySelectorAll('.nav a');
-      var sections = Array.from(document.querySelectorAll('main section'));
-      function activateFromHash() {
-        var id;
-        try {
-          id = decodeURIComponent(window.location.hash.slice(1));
-        } catch (error) {
-          id = '';
-        }
-        if (!sections.some(function (section) { return section.id === id; })) {
-          id = 'about';
-        }
-        sections.forEach(function (section) {
-          var active = section.id === id;
-          section.classList.toggle('active', active);
-          section.hidden = !active;
-        });
-        tabs.forEach(function (tab) {
-          var active = tab.getAttribute('href') === '#' + id;
-          tab.classList.toggle('active', active);
-          if (active) {
-            tab.setAttribute('aria-current', 'location');
-          } else {
-            tab.removeAttribute('aria-current');
-          }
-        });
-      }
-      tabs.forEach(function (tab) {
-        tab.addEventListener('click', function (event) {
-          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-          event.preventDefault();
-          var hash = tab.getAttribute('href');
-          if (window.location.hash !== hash) {
-            window.history.pushState(null, '', hash);
-          }
-          activateFromHash();
-        });
-      });
-      window.addEventListener('hashchange', activateFromHash);
-      window.addEventListener('popstate', activateFromHash);
-      activateFromHash();
-    })();
-
-    // Email assembled from parts so scrapers don't see a full address in the HTML
-    (function () {
-      var user = 'hangu.chen';
-      var domain = 'du' + '.' + 'edu';
-      var addr = user + '@' + domain;
-      var el = document.getElementById('email-link');
-      if (el) {
-        el.href = 'mailto:' + addr;
-        // Visible text stays "Email"; the address lives only in the mailto link
-      }
-    })();
-    const btn = document.getElementById('theme-toggle');
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-    });
-  </script>
 </body>
 </html>
