@@ -94,7 +94,7 @@ h2 { font-size: 51px; line-height: 1.15; letter-spacing: -.035em; margin-bottom:
 .section-content > h2 { border-bottom: 3px double var(--line); padding-bottom: 20px; }
 .section-content > p { font-size: 14px; line-height: 1.95; }
 .hl { color: inherit; }
-#about .section-content > p:last-child { font: italic 21px/1.6 var(--serif); color: var(--muted); margin-bottom: 0; }
+#about .section-content > p:last-child { margin-bottom: 0; }
 .paper { display: grid; grid-template-columns: 100px minmax(0,1fr); gap: 26px; padding: 31px 0; border-bottom: 1px solid var(--line); }
 .paper:first-of-type { padding-top: 0; }
 .paper:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -209,4 +209,11 @@ h3 { font-size: 27px; line-height: 1.25; letter-spacing: -.01em; margin-bottom: 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
+}
+
+.social-links { flex-wrap: wrap; }
+@media (min-width: 821px) and (max-width: 1100px) {
+  .header-inner { flex-wrap: wrap; }
+  .nav { order: 3; flex-basis: 100%; justify-content: flex-start; }
+  .theme-toggle { margin-left: auto; }
 }
